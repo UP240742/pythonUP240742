@@ -1,4 +1,5 @@
-#declrar diable 
+#declrar diable
+import math 
 #1,2,3
 age=('18')  #numero entero 
 height=1.70
@@ -42,20 +43,22 @@ circumference=(2 * pi *radio)
 print('la circuenferencia es:', circumference)
 
 #8
-#definir la variable 
-x1=2
-z2=-2
-intercepcion_x=(0-z2)/x1
-intercepcion_y=z2 
-print("pendiente", x1)
-print("Intersección con eje x: (", intercepcion_x, ", 0 )")
-print("Intersección con eje y: ( 0 ,", intercepcion_y,")")
+slope=2
+y_intercept=-2
+x_intercept=1
 
 #9
+x1, y1 = 2, 2
+x2, y2 = 6, 10
+slope2 = ((y2 - y1)/(x2 - x1))
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
 #10
+print(slope==slope2)
 
 #11
+x=-3
+y=(x ** 2 + 6 * x + 9)
 
 #12
 #declarar las variables 
@@ -70,6 +73,57 @@ print('las palabras qur tiene son:', length2)
 print('la comparacion es:', lenght1==length2)
 
 #13
+n=("on" in "dragon" and "on" in "python")
+print("Is 'on' in both 'python' and 'dragon'?", n) 
+
+#14
+jargon=("jargon" in "I hope this course is not full of jargon")
+print("Is 'jargon' in the sentence 'I hope this course is not full of jargon'?", jargon)
+
+#15
+ont=('on' not in 'dragon' and 'on' not in 'python')
+print("There is no 'on' in both dragon and python", ont)
+
+#16
+lengtht_python=len('python')
+print(float(lengtht_python))
+print(str(lengtht_python))
+#str definir una cadena 
+
+#17
+numero=int(input('ingrese un numero par:'))
+numero_par=(numero % 2 == 0)
+print('su numero es par:', numero_par ) 
+
+#18 
+comparacion=(7 // 3 == int(2.7))
+print('la divicion entre el 7 y 3 es equivalente 2.7', comparacion)
+
+#19 
+tipo=(type('10') == 10)
+print('el tipo 10 es equivalente a 10', type)
+
+#20
+n=(int(float('9.8')) == 10)
+print("int('9.8') is equal to 10", n)
+
+#21
+horas=int(input('ingrese las horas:'))
+pagar=int(input('ingrese la tarifa por hora:'))
+print('ganacias semanales son:', horas*pagar)
+
+#22
+años= int(input('ingrese años vividos:'))
+segundos= años * 365 * 24 * 60 * 60
+print('has vivido por:', segundos, "segundos.")
+
+#23
+print("1 1 1 1 1")
+print("2 1 2 4 8")
+print("3 1 3 9 27")
+print("4 1 4 16 64")
+print("5 1 5 25 125")
+
 
 
 

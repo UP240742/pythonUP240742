@@ -46,25 +46,32 @@ print(len(a))
 print(len(b))
 print(len(c))
 
+#5
 num_one=4
 num_two=5 
-
+#6
 total=(num_one + num_two)
+#7
 diff=(num_one + num_two)
+#8
 multiply=(num_one + num_two)
+#9
 divide=(num_one / num_two)
+#10
 modules_division=(num_one % num_two)
+#11
 exp=(num_one ** num_two)
+#12
 floor_division=(num_one // num_two)
-
+#13
 #darle un valor a una variable 
 radius=30
 #sacar la variable de la variable 
 area=(3.1416(radius ** 2))
 circumference=(2 * 3.1416 * radius)
-
+#14
 radio=int(input('Radio:'))
-#int es para identificar a la varible como entero
+#int: es para identificar a la varible como entero
 area=(3.1416(radio ** 2))
 #no es necesario el int ya que arriba se definio
 
@@ -72,4 +79,7 @@ nombre=input('first_name')
 apellido=input('last_name')
 pais=input('Contry')
 edad=input('Edad')
+
+
+
 

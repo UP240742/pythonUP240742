@@ -1,3 +1,6 @@
+import math
+
+#ejercicio 1 
 print(type(5 + 6))
 print(type(67 + 34))
 print(type(567 + 385))
@@ -49,4 +52,8 @@ print(type('Canada'))
 print(type('Mexico'))
 
 
-
+#ejercicio 2
+x1, y1 = 2, 3
+x2, y2 = 4, 5
+slope2 = ((y2 - y1)/(x2 - x1))
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2) 

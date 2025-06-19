@@ -1,5 +1,4 @@
 #level1
-
 #declarar variables
 
 first_name=input('Julieta')
@@ -14,8 +13,8 @@ is_true=input('Es verdad')
 is_light_on=input('Luz encedida')
 a,b,c= input('Ingrese tres valores:').split()   #variables 
 
+#level 2 
 #imprimir las variables 
-
 print(type(first_name))
 print(type(last_name))
 print(type(full_name)) 
@@ -26,7 +25,12 @@ print(type(year))
 print(type(is_married))
 print(type(is_true))
 print(type(is_light_on))
-print(type(a,b,c))
+print(type(a))
+print(type(b))
+print(type(c))
+
+
+
 
 
 
