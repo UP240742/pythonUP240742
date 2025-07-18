@@ -126,12 +126,47 @@ print("5 1 5 25 125")
 
 
 
+#boolean 
 
+#verdadero o falso SIEMPRE en mayuscculas la primera letra 
+print(True)
+print(False)
 
+#se  realiza la operacion con la palabra en entre comillas 
+print('suma', 7 + 2)
 
+#se compara dos numeros 
+#se imprime con True o False 
+print(3 > 2)     # True, 3 es MAYOR que 2
+print(3 >= 2)    # True, 3 es MAYOR que 2
+print(3 < 2)     # False, 3 no es MAYOR que 2 
+print(2 < 3)     # True, 2 es MENOR que 3
+print(2 <= 3)    # True, 2 es MENOR que 3
+print(3 == 2)    # False, 3 no es IGUAL a 2
+print(3 != 2)    # True, 3 no es IGUAL a 2
 
+#se cuentas las letras y se evaluan y se clasifica con True o False 
+print(len('mango') == len('avocado'))
+print(len('milk') != len('meat'))
 
+#is= verdad si ambas variables son el mismo 
+print('1 is 1')
 
+#is not= verdad si ambas variables no son las mismas 
+print('1 is not 2')
+
+#in= identifica si el termino esta en la frase (aplica tambien con numeros)
+print('dior' in 'christian dior')
+
+#and= True, por que ambos son verdaderos 
+print(3 > 2 and 4 > 3)
+#falso
+print(3 > 2 and 4 < 3)
+
+#or= True, porque ambos son veredaderos 
+print(3 > 2 or 4 > 3)  
+#falso 
+print(3 > 2 or 4 < 3)
 
 
 

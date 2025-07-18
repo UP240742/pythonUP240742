@@ -157,11 +157,274 @@ print(f'{a} ** {b} = {a ** b}')
 
 
 
+#cadena 
+#len= cuenta las letras de la frase 
+saludo= ('hola, como estas?')
+print(saludo)
+print(len(saludo))
+
+#multi cadena 
+mil_cade= 'la vida es como el mar, por eso hay que darse como a la espuma'
+print(mil_cade)
+
+#concatenacion (suma de datos/numeros)
+sal= 'hola'
+cor= 'como estas'
+sig= '?'
+es=' '
+salud= sal + es + cor + sig 
+print(salud)
+
+#/n= nueva linea 
+print('la vida es como el mar.\n por eso hay que darse como a la espuma')
+
+#/t= agrega 8 espacios 
+print('hola\tmundo\tpequeño') 
+print('hola\t34\t21') 
+
+print('This is a backslash  symbol (\\)')
+
+#\\ = barra invertida(/)
+print('hola\\mundo') 
+
+#\' = comilla simple 
+print('hola \'mundo') 
+
+#\" = comilla doble se agrega inicio y final para que funcione 
+print('hola \"mundo\"')  
+
+#%s = es para identificare una variable sin escibirla 
+first_name = 'Asabeneh'
+last_name = 'Yetayeh'
+language = 'Python'
+formated_string = 'I am %s %s. I teach %s' %(first_name, last_name, language)
+print(formated_string) 
+
+herm1 = 'cely'
+herm2 = 'mome'
+herm3 = 'natalia'
+hers = 'yo tengo tres hermanos %s %s y %s' %(herm1, herm2, herm3)
+print(hers)
+
+#%d = numeros enteros 
+#%f = numeros decimales 
+r = 21 
+pi = 3.14 
+area= pi * r **2 
+form = 'el area del circulo es: %d por %2f' %(r, pi)
+print(area)
+
+#se imprime la aoperacuin y resultado 
+a = 4
+b = 3
+print(f'{a} + {b} = {a +b }')
+print(f'{a} - {b} = {a - b}')
+print(f'{a} * {b} = {a * b}')
+
+#cadenas la palabra va en vertical una letra por letra 
+pal = 'escribir' 
+a,b,c,d,e,f,g,h = pal
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+print(g)
+print(h)
+
+#[n] = se imprime la letra solicitada entre parentesis 
+p = 'programar'
+first_letter = p[0] 
+print(first_letter)
+sexta_letter = p[6]
+print(sexta_letter) 
+#para empezar de atras para adelante los numeros son negativos 
+last_letter =p [-1]
+print(last_letter)
+segunda_letter =p[-3]
+print(segunda_letter)
+
+#utiliza cordenadas para imprimir lo necesario 
+l= 'ingeniero'
+primer_cuarto= l[0:4]
+print(primer_cuarto)
+
+seg = l[3:8]
+print(seg)
+
+#tambien se puede aplicar numeros negativos para empezar de atras 
+ter = l[-6:-2]
+print(ter) 
+
+do = l[0:-5]
+print(do)
+
+#[::-1] = invertir cadenas 
+fra = 'llaman a la puerta'
+print(fra[::-1]) 
+
+#NO FUNCIONA 
+#[n:n:n] = los numeros de las letras se quitan 
+rf = fra [0:9:4]
+print(rf) 
+
+#.capitalize () = para convertir la priera palabra a la mayuscula 
+print(fra.capitalize())
+
+#.count('letra') = cuenta las letras de la frase 
+print(fra.count('l'))
+print(fra.count('a'))
+
+#.endswith() = identificar si lo del parentesis tiene la terminacion 
+print(fra.endswith('rta')) 
+print(fra.endswith('llam')) 
+
+#.expandtabs(puedees agregar numero)= agregar espacios en cada palabra 
+#debe agregar \t en cada espacio de las letras 
+rt = 'documental\tde\tnetflix' 
+print(rt.expandtabs())
+print(rt.expandtabs(12))
+
+#.rfind(letras) = numero de letra que tiene, tambien se cuentan los espacios y empieza a contar desde 0 
+frase6='codigo completo'
+#identificar cada posiscion de la letra 
+print(frase6.rfind('c')) 
+print(frase6.rfind('g'))
+print(frase6.rfind('l'))
+
+#.format() = juntar variables {}, se suman las variables 
+v = 'vaso'
+c = 'cucharra'
+t = ' tenedor' 
+p = 'plato'
+mesa= 'me gusta cotar agua en un {}, comer con un {} y {} o {}'.format(v, p, c, t)
+print(mesa)
+
+#NO FUNCIONA 
+l1= 23 
+pi = 20.45
+area= pi *l1 **2
+res = 'el area del circulo es: {} is {}'.format(str(l1), str(area))
+print(res)
+
+#.index() = da la posiscien en la que se necuntra
+mus ='el kpop si es musica'
+g = 'es'
+print(mus.index(g))
+
+#.rindex() = cuenta los epacios que hay antes de llagar a lo solicitado ()
+print(mus.rindex(g))
+print(mus.rindex(g, 8))
+print(mus.rindex('pop'))
+
+#.isalnum() = comprueba caracteres alfanumericos 
+w = 'lavidaesbella123'
+print(w.isalnum()) #true 
+f = 'lavidaesbella'
+print(f.isalnum()) #true
+q= 'la vida es bella 123'
+print(q.isalnum()) #false 
+#los espacios no son alfamunericos 
+
+#.isalpha() = compruba caracteres alfabeticos (a - z)
+t = 'twiceeselmejorgrupo'
+print(t.isalpha()) #true
+y = 'twice es el mejor grupo'
+print(y.isalpha()) #false, espacios no son alfabeticos 
+k = 'twiceeselmejorgrupo123'
+print(k.isalpha()) #false, los numeros 
+
+#.isdecimal() = comprueba los carateres de la cadena si son decimales (0-9)
+le = 'muchas veces no eliges'
+print(le.isdecimal()) #false, no tiene decimales 
+ke = '893'
+print(ke.isdecimal()) #true, tiene numeros 
+mn = '9.43'
+print(mn.isdecimal()) #false, decimales no cuentan 
+#los espacios tompoco cuentan 
+
+#.isdigit() = identifica numeros y otros caracteres 
+lo = 'hola'
+print(lo.isdigit()) #false, letras no cuenta 
+mu = '543'
+print(mu.isdigit()) #true, numeros correcto
+si = '\B92'
+print(si.isdigit()) #false, caracteres correcto 
+
+#.isnumeric () = comprueba si tiene numeros 
+ju = '54'
+print(ju.isnumeric()) #true
+li = '\H787s'
+print(li.isnumeric()) #false 
+et = '45.2'
+print(et.isnumeric()) #false, decimales no cuentan 
+
+#.isidentifier() = comprueba si tiene un nombre adecuado de cadena_
+ta = 'bailemos_toda_la_noche'
+print(ta.isidentifier()) #true, importa los__
+ej = 'bailemos_toda_la_noche555'
+print(ej.isidentifier()) #true, numeros si valen 
+al = 'bailemos toda la noche'
+print(al.isidentifier()) #false, no tiene__
+
+#.islower() = comprueba si estan en minusculas 
+an = 'cookie'
+print(an.islower()) #true 
+dr = 'Cookie'
+print(dr.islower()) #false
+
+#.isupper() = comprueba si TODAS estan en mayusculas 
+print(an.isupper()) #false 
+print(dr.isupper()) #false 
+ra = 'COOKIE'
+print(ra.isupper()) #true 
+
+#join(puede estar libre o agregar carater) = devuelve una cadena conectada 
+web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
+result = ' '.join(web_tech)
+print(result) # 'HTML CSS JavaScript React'
+web_tech2= ['HTML', 'CSS', 'JavaScript', 'React']
+result = '# '.join(web_tech2)
+print(result) # 'HTML# CSS# JavaScript# React'
+
+#.strip() = elimina caracteres del ()
+ru = 'momoland'
+print(ru.strip('mo'))
+
+#.replace() = emplaza cadena dada 
+challenge5 = 'thirty days of python'
+print(challenge5.replace('python', 'coding')) 
+#(palabra a quitar, palabra nueva)
+
+#.split() = divide la cadena dada 
+iz= 'alcohol free'
+print(iz.split()) #['alcohol', 'free']
+ve = 'alcohol, free'
+print(ve.split('.'))
+
+#.title() = minusculas a mayusculas la primera
+la = 'kill this love'
+print(la.title()) #solo las letras inciales 
+
+#.swapcase() = minusculas a mayusculas TODA la frase 
+print(la.swapcase())
+sc = 'Kill This Love'
+print(sc.swapcase()) #la mayuscula se vuelve minuscula 
+
+#.startswith() = empieza con la letra del ()
+co = 'you y me'
+print(co.startswith('you')) #true 
+print(co.startswith('me')) #false 
 
 
 
+#18 
+tres = it_companies[4:9]
+print(tres)
+#19 
+tre = it_companies[0:6]
 
-
-
-
-
+#20 
+emp = it_companies[4:6]
+print(emp) 

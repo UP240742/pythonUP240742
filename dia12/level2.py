@@ -1,0 +1,32 @@
+#level2
+import random
+#1
+def list_of_hexa_colors(num_colors):
+    hex_colors = []
+    for _ in range(num_colors):
+        color = '#{:06X}'.format(random.randint(0, 0xFFFFFF))
+        hex_colors.append(color)
+    return hex_colors
+print("La lista de hexa colors es:", list_of_hexa_colors(5))
+#2
+def list_of_rgb_colors(num_colors):
+    rgb_colors = []
+    for i in range(num_colors):
+        color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        rgb_colors.append(color)
+    return rgb_colors
+print("La lista de rgb colors es :", list_of_rgb_colors(5))
+#3
+def generate_colors(num_colors, color_type):
+    colors = []
+    if color_type == 'hexa':
+        for i in range(num_colors):
+            color = '#{:06X}'.format(random.randint(0, 0xFFFFFF))
+            colors.append(color)
+    elif color_type == 'rgb':
+        for i in range(num_colors):
+            color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+            colors.append(color)
+    return colors
+print("La generada colors es:", generate_colors(5, 'hexa'))
+print("La generada colors es:", generate_colors(5, 'rgb'))
